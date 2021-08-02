@@ -2,7 +2,8 @@
 
 require_relative "sign_now_sdk/version"
 
-module SignNowSdk
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "sign_now_sdk/client"
+require_relative "sign_now_sdk/connection"
+
+# Resources
+require_relative "sign_now_sdk/resources/document"

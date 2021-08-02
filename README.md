@@ -1,9 +1,6 @@
 # SignNowSdk
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sign_now_sdk`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
+Ruby SDK for the SignNow API.
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +19,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Instancing the client: 
+
+```ruby
+sign_now_client = SignNowSdk::Client.new(username: sign_now_username,
+                                         password: sign_now_password,
+                                         basic_auth_token: basic_auth_token)
+```
+
+### Working with documents
+
+#### Uploading a new document:
+
+Uploads a new document to sign now. Supports .doc, .docx, .pdf, .xls, .xlsx, .ppt, .pptx and .png filetypes. 
+Uploading documents with tags is not supported through the SDK at this point in time. 
+
+```ruby
+file = File.open('/path/to/file.pdf') # (supports .doc, .docx, .pdf, .xls, .xlsx, .ppt, .pptx and .png)
+document = sign_now_client.documents.create(file: file) # returns a SignNowSdk::Document
+```
 
 ## Development
 

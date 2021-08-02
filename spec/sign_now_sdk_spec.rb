@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe SignNowSdk do
+RSpec.describe SignNowSDK do
   it "has a version number" do
-    expect(SignNowSdk::VERSION).not_to be nil
+    expect(SignNowSDK::VERSION).not_to be nil
   end
 end

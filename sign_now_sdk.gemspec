@@ -4,7 +4,7 @@ require_relative "lib/sign_now_sdk/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "sign_now_sdk"
-  spec.version       = SignNowSdk::VERSION
+  spec.version       = SignNowSDK::VERSION
   spec.authors       = ["PJ Davis"]
   spec.email         = ["pj.davis@gmail.com"]
 
