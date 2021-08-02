@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Ruby SDK for the Sign Now API"
   spec.homepage      = "https://github.com/pjdavis/sign_now_sdk"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.5")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 

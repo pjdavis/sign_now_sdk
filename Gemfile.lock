@@ -43,7 +43,7 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
-  x86_64-darwin-20
+  ruby
 
 DEPENDENCIES
   rake (~> 13.0)
@@ -52,4 +52,4 @@ DEPENDENCIES
   sign_now_sdk!
 
 BUNDLED WITH
-   2.2.3
+   1.17.2
